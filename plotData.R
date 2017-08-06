@@ -1,3 +1,4 @@
-pdf(File = '../results/firstHistogram.pdf')
+whales <-read.csv(file='../data/bbmroData.csv')
+pdf(file = '../results/firstHistogram.pdf')
 hist(whales$SST)
-def.off()
+dev.off()
